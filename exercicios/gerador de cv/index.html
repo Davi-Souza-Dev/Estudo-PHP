@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Informações</title>
+  </head>
+  <body>
+    <section>
+      <form action="cv.php" method="post" enctype="multipart/form-data">
+        <div class="container" id="container">
+          <div class="infoContainer" id="infoContainer">
+            <div class="input-container">
+              <input type="text" id="txtNome" name="txtNome" required="" />
+              <label for="txtNome" class="label">Nome Completo</label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-container">
+              <input type="email" id="txtEmail" name="txtEmail" required="" />
+              <label for="txtEmail" class="label">Email</label>
+              <div class="underline"></div>
+            </div>
+            <button type="button">
+              <span class="btnNext"> Proximo </span>
+            </button>
+          </div>
+          <div class="infoContainer hide" id="infoContainer">
+            <div class="input-container">
+              <input type="tel" id="txtTel" name="txtTel" required="" />
+              <label for="txtTel" class="label">Telefone</label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-container">
+              <input type="number" id="numIdade" name="numIdade" required="" />
+              <label for="numIdade" class="label">Idade</label>
+              <div class="underline"></div>
+            </div>
+            <button type="button">
+              <span class="btnNext"> Proximo </span>
+            </button>
+          </div>
+          <div class="infoContainer hide" id="infoContainer">
+            <div class="input-container">
+              <input type="text" id="txtProf" name="txtProf" required="" />
+              <label for="txtProf" class="label">Profissão</label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-container">
+              <label for="txtExp">Experiência</label>
+              <textarea
+                name="txtExp"
+                id="txtExp"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <div class="underline"></div>
+            </div>
+            <button type="button">
+              <span class="btnNext">Proximo</span>
+            </button>
+          </div>
+          <div class="infoContainer hide" id="infoContainer">
+            <input type="file" name="imgFoto" id="imgFoto" >      
+            <button type="submit" name="btnGerar" class="btnGerar">
+              <span class="btnNext"> Gerar CV </span>
+            </button>
+          </div>
+          <div class="bolha" id="bolha"></div>
+        </div>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
