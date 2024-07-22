@@ -9,19 +9,19 @@ include_once 'includes/header.php';
         <h1 class="light">Novo Cliente</h1>
         <form action="phpActions/create.php" method="post">
             <div class="input-field col s12">
-                <input type="text" name="txtNome" id="txtNome">
+                <input type="text" name="txtNome" id="txtNome" required>
                 <label for="txtNome">Nome</label>
             </div>
             <div class="input-field col s12">
-                <input type="text" name="txtSobrenome" id="txtSobrenome">
+                <input type="text" name="txtSobrenome" id="txtSobrenome" required>
                 <label for="txtSobrenome">Sobrenome</label>
             </div>
             <div class="input-field col s12">
-                <input type="email" name="txtEmail" id="txtEmail">
+                <input type="email" name="txtEmail" id="txtEmail" required>
                 <label for="txtEmail">Email</label>
             </div>
             <div class="input-field col s12">
-                <input type="text" name="numIdade" id="numIdade">
+                <input type="text" name="numIdade" id="numIdade" required>
                 <label for="numIdade">Idade</label>
             </div>
             <button type="submit" class="btn" name="btnCadastrar" id="btnCadastrar">Cadastrar</button>            
